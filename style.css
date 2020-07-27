@@ -1,0 +1,730 @@
+*{
+    padding: 0;
+    margin: 0px 2px 0px 2px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#ueberschrift{
+    height: 200px;
+    background-color: #fff;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #FFF;
+    margin-top: 0; 
+    width: 100%; 
+    z-index: 9999;
+}
+
+.logo{
+    color: #BE2664;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.logo a:link {
+    text-decoration: none;
+    color: #BE2664;
+}
+.logo a:visited{
+    text-decoration: none;
+    color: #BE2664;
+}
+.logo a:hover{
+    text-decoration: none;
+    color: #BE2664;  
+}
+.logo a:active{
+    text-decoration: none;
+    color: #BE2664;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #BE2664;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:#BE2664;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1480px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    .nav-links a{
+
+        font-size: 1rem;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);    
+}
+
+/* Welcome Section */
+.welcome-section{
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+
+.welcome img{
+    background-image: url(//img/pink-petal-flower-1696726.jpg); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    float: left;
+    width:  100%;
+    max-height: 937px;
+    min-height: 500px;
+    object-fit: cover;
+    position: relative;
+
+}
+
+@media (min-height: 1921px){
+    .welcome img{
+        height: auto;
+        width: 100%;
+    }
+    .welcome h1{
+        margin-top: 17%;
+    }
+    .welcome h2{
+        display: none;
+    }
+}
+
+.welcome h1{
+    position: absolute;
+    margin-top: 18%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-left: 3rem;
+    color:#BE2664;
+}
+
+.welcome h2{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 3rem;
+    font-size: 2rem;
+    color:#BE2664;
+    font-weight: lighter;
+}
+
+.welcome h3{
+    display: none;
+}
+
+@media screen and (max-width:1564px){
+    .welcome h2{
+        display: none;
+    }
+    .welcome h3{
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 3rem;
+        font-size: 1.7rem;
+        color:#BE2664;
+        font-weight: lighter;
+        display: block;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .welcome h1{
+        margin-top: 35%;
+    }
+    .welcome h3{
+        display: none;
+    }
+}
+
+@media screen and (max-width:830px){
+    .welcome h1{
+        font-size: 2rem;
+}
+.welcome h2{
+    display: none;
+}
+.welcome h3{
+    display: none;
+}
+}
+
+@media screen and (max-width:645px){
+    .welcome h1{
+        font-size: 1.5rem;
+        margin-top: 50%;
+    }
+    .welcome h2{
+        display: none;
+    }
+    .welcome h3{
+        display: none;
+    }
+}
+
+
+/* Unsere-Angebote Section */
+.scrollable1{
+    background-image: url("./img/close-up-photography-of-pink-flowers-1408221.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.scrollable1 h1{
+    color: #fff;
+    display: flex;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.angebote-section{
+    height: auto;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.angebote-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.angebote-box div{
+    background-color: rgb(251, 251, 251);
+    height: 500px;
+    width: 800px;
+    margin: 4px 4px 4px 4px;
+}
+
+.angebote-box h1{
+    color: #BE2664;
+    display: flex;
+	flex-direction: column;
+	align-items:center;
+    padding: 3rem;
+    font-size: 2.6rem;
+}
+
+.hochzeit a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hochzeit p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .hochzeit p{
+        font-size: 1.4rem;
+    }
+}
+
+.trauer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+}
+
+.trauer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .trauer p{
+        font-size: 1.4rem;
+    }
+}
+
+.fleurop img{
+    height: 150px;
+    width: auto;
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+.fleurop a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+}
+
+.fleurop p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .fleurop p{
+        font-size: 1.4rem;
+    }
+}
+
+.workshop p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.workshop .corona{
+    background-color: rgb(138, 138, 255);
+    color: #fff;
+}
+
+.workshop a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .workshop p{
+        font-size: 1.4rem;
+    }
+}
+
+.geschenk-ideen p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.geschenk-ideen img{
+    height: 300px;
+    width: auto;
+    margin-left: 50%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .geschenk-ideen p{
+        font-size: 1.4rem;
+    }
+}
+
+/* Unser-Team Section */
+.scrollable2{
+    background-image: url("./img/beautiful-bloom-blooming-blossom-531731.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.scrollable2 h1{
+    color: #fff;
+    display: flex;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.team-section{
+    height: auto;
+    background: #fff;
+    position: relative;
+}
+
+.team-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-box h1{
+    color: #BE2664;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.team-box img{
+    height: 645,12px;
+    width: 483.84px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px 0px rgba(184,184,184,1);
+}
+
+.team-1{
+    transition: transform .2s;
+}
+
+.team-1:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.team-2{
+    transition: transform .2s;
+}
+
+.team-2:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.team-3{
+    transition: transform .2s;
+}
+
+.team-3:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+/* Galerie Section */
+
+.scrollable3{
+    background-image: url("./img/pink-green-and-purple-flowers-during-daytime-101472.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.scrollable3 h1{
+    color: #fff;
+    display: flex;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.galerie-ueberschrift{
+    color: #BE2664;
+    display: flex;
+    justify-content: center;
+}
+
+.galerie-slideshow{
+    display: flex;
+    justify-content: center;
+}
+
+.mySlides1, .mySlides2, .mySlides3{
+    display: none
+}
+.mySlides img {
+    vertical-align: middle;
+}
+
+    /* Slideshow container */
+.slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto; 
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-right: -0.5px;
+      padding: 10px;
+      color: #BE2664;
+      font-size: 18px;
+      transition: 0.6s ease;
+      background-color: #FFF;
+}
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 0px 0 0 0px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: #BE2664;
+      color: #fff;
+    }
+@media screen and (max-width: 1160px){
+    .galerie-slideshow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Kontakt */
+
+.scrollable4{
+    background-image: url("./img/beautiful-bloom-blooming-blossom-531731.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.scrollable4 h1{
+    color: #fff;
+    display: flex;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.kontakt-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.oeffnungszeiten #bold{
+    color: #BE2664;
+    font-size: 1.2rem;
+}
+
+.oeffnungszeiten #wichtig{
+    font-weight: bold;
+}
+
+.adresse #bold{
+    color: #BE2664;
+    font-size: 1.2rem;
+}
+
+.kontakt-map .kontakt-googlemaps{
+    margin-top: 3rem;
+    height: 500px;
+    width: 100%;
+}
+
+@media screen and (max-width: 770px){
+    .kontakt-info{
+        display: inline;
+    }
+
+    .oeffnungszeiten{
+        margin-bottom: 1.3rem;
+    }
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 1rem;
+    background-color: rgb(236, 236, 236);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-info{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#bold{
+    font-weight: 600;
+}
+
+.sm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sm a{
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 24px;
+    box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+                -6px -6px 12px rgba(255,255,255,.1);
+    overflow: hidden;
+    font-size: 28px;
+    transition: .3s linear;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+.sm a:hover{
+    transform: scale(1.3);
+    border-radius: 50%;
+  }
+  
+.sm a i::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: 200% 200%;
+    background-position: 75% 75%;
+    top: 0;
+    left: 0;
+    line-height: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background .5s linear;
+  }
+  
+.sm a:hover i::before{
+    background-position: 0% 0%;
+  }
+  
+.fa-facebook-f::before{
+    background-image: linear-gradient(135deg,#fff 30%,#BE2664 50%);
+}
+  
+.fa-instagram::before{
+   background-image: linear-gradient(135deg,#fff 30%,#BE2664 50%);
+}
+
+.fa-envelope:before{
+    background-image: linear-gradient(135deg,#fff 30%,#BE2664 50%);
+}
+
+
