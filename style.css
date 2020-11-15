@@ -313,6 +313,19 @@ nav {
     font-size: 2.6rem;
 }
 
+.adventsaustellung{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adventsaustellung img{
+    width: auto;
+    height: 500px;
+
+
+}
+
 .hochzeit a{
     display: flex;
     align-items: center;
