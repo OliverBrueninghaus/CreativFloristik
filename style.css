@@ -262,7 +262,7 @@ nav {
 
 /* Unsere-Angebote Section */
 .scrollable1{
-    background-image: url("./img/close-up-photography-of-pink-flowers-1408221.jpg");
+    background-image: url("./img/background-1.jpg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -322,8 +322,6 @@ nav {
 .adventsaustellung img{
     width: auto;
     height: 500px;
-
-
 }
 
 .hochzeit a{
@@ -444,7 +442,7 @@ nav {
 
 /* Unser-Team Section */
 .scrollable2{
-    background-image: url("./img/beautiful-bloom-blooming-blossom-531731.jpg");
+    background-image: url("./img/background-2.jpg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -524,7 +522,7 @@ nav {
 /* Galerie Section */
 
 .scrollable3{
-    background-image: url("./img/pink-green-and-purple-flowers-during-daytime-101472.jpg");
+    background-image: url("./img/background-3.jpg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -605,7 +603,7 @@ nav {
 /* Kontakt */
 
 .scrollable4{
-    background-image: url("./img/beautiful-bloom-blooming-blossom-531731.jpg");
+    background-image: url("./img/background-2.jpg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
