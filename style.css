@@ -3,6 +3,7 @@
     margin: 0px 2px 0px 2px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #ueberschrift{
@@ -313,15 +314,17 @@ nav {
     font-size: 2.6rem;
 }
 
-.adventsaustellung{
+.urlaub a{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.adventsaustellung img{
-    width: auto;
-    height: 500px;
+.urlaub p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
 }
 
 .hochzeit a{
