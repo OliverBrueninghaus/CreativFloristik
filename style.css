@@ -314,19 +314,6 @@ nav {
     font-size: 2.6rem;
 }
 
-.urlaub a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.urlaub p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-}
-
 .hochzeit a{
     display: flex;
     align-items: center;
