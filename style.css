@@ -164,8 +164,7 @@ nav {
 }
 
 
-.welcome img{
-    background-image: url(//img/pink-petal-flower-1696726.jpg); /* The image used */
+.welcome img{/* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     float: left;
     width:  100%;
