@@ -383,7 +383,7 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+}
 
 @media only screen and (max-width: 768px) {
     .fleurop p{
@@ -731,6 +731,4 @@ nav {
 
 .fa-envelope:before{
     background-image: linear-gradient(135deg,#fff 30%,#BE2664 50%);
-}
-
 }
