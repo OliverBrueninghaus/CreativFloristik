@@ -301,7 +301,7 @@ nav {
     background-color: rgb(251, 251, 251);
     height: 500px;
     width: 800px;
-    margin: 4px 4px 4px 4px;
+    margin: 4px;
 }
 
 .angebote-box h1{
@@ -478,7 +478,7 @@ nav {
 }
 
 .team-box img{
-    height: 645,12px;
+    height: 645.12px;
     width: 483.84px;
     border-radius: 8px;
     box-shadow: 0px 0px 18px 0px rgba(184,184,184,1);
@@ -554,6 +554,10 @@ nav {
 }
 .mySlides img {
     vertical-align: middle;
+}
+
+.border-image {
+    width: 100%;
 }
 
     /* Slideshow container */
