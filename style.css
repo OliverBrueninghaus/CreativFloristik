@@ -1,7 +1,7 @@
-@font-face{font-family:"Young Serif";src:url("fonts/young-serif-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-latin-500-normal.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Young Serif";src:url("fonts/young-serif-400.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-400.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-500.woff") format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"Albert Sans";src:url("fonts/albert-sans-600.woff") format("woff");font-weight:600;font-display:swap}
 /* Layout: geteilter Auftakt (Text links, Blüte rechts, Öffnungszeiten als Blumenanhänger), danach ruhige Bildraster auf Papierweiß */
 :root{
   --papier:#FBF7F8; --blatt:#21392F; --tinte:#2B1F25; --leise:#6E5F66;
@@ -12,6 +12,7 @@
   color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--papier);color:var(--tinte);font-family:var(--text);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
