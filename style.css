@@ -12,6 +12,7 @@
   color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--papier);color:var(--tinte);font-family:var(--text);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
