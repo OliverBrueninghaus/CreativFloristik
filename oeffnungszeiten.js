@@ -37,5 +37,10 @@ window.OEFFNUNGSZEITEN = {
     // { von: "2027-05-09", bis: "2027-05-09", zeiten: { Sonntag: ["8:00-12:00"] },
     //   hinweis: "Am Muttertag haben wir von 8:00 bis 12:00 Uhr geöffnet." },
 
+    // Adventsausstellung Winterzauber & Festtagslicht
+    { von: "2026-11-20", bis: "2026-11-22",
+      zeiten: { Freitag: ["8:30-18:30"], Samstag: ["8:30-16:00"], Sonntag: ["10:00-16:00"] },
+      hinweis: "Adventsausstellung: Freitag 20.11. 8:30–18:30 Uhr, Samstag 21.11. 8:30–16 Uhr, Sonntag 22.11. 10–16 Uhr. Eingang über die Annastraße." },
+
   ]
 };

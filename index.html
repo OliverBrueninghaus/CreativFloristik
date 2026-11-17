@@ -23,6 +23,7 @@
     <a class="logo" href="#top">Creativ <span>Floristik</span></a>
     <button class="menue" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
     <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <a href="#ausstellung" id="nav-ausstellung" hidden>Ausstellung</a>
       <a href="#angebote">Angebote</a>
       <a href="#team">Team</a>
       <a href="#galerie">Galerie</a>
@@ -55,6 +56,29 @@
           <dt>So</dt><dd>geschlossen</dd>
         </dl>
       </aside>
+    </div>
+  </section>
+
+  <section class="abschnitt ausstellung" id="ausstellung" aria-labelledby="ausstellung-titel" hidden>
+    <div class="huelle ausstellung-innen">
+      <div class="ausstellung-bild">
+        <img src="img/advent-ausstellung.jpg" alt="Brennende rote Adventskerze, umgeben von Tannengrün, Zapfen und goldenen Kugeln" width="1231" height="621">
+      </div>
+      <div class="ausstellung-text">
+        <p class="marke">Adventsausstellung</p>
+        <h2 id="ausstellung-titel">Winterzauber &amp; Festtagslicht</h2>
+        <p class="ausstellung-untertitel">Adventsglanz bei Creativ-Floristik</p>
+        <dl class="ausstellung-zeiten">
+          <dt>Freitag, 20.11.</dt><dd>8:30 – 18:30 Uhr</dd>
+          <dt>Samstag, 21.11.</dt><dd>8:30 – 16:00 Uhr</dd>
+          <dt>Sonntag, 22.11.</dt><dd>10:00 – 16:00 Uhr</dd>
+        </dl>
+        <p>Tauchen Sie ein in die Welt des Advents und erleben Sie die festliche Vielfalt von Creativ-Floristik in unseren neuen Räumlichkeiten: gefertigte Adventskränze, stilvolle Weihnachtsdekorationen, ausgewählte Geschenkideen und florale Kreationen.</p>
+        <p class="ausstellung-anfahrt">Eingang über die Annastraße. Kundenparkplätze finden Sie direkt hinter dem Geschäft.</p>
+        <div class="knoepfe">
+          <a class="knopf hell" href="#kontakt">Anfahrt &amp; Kontakt</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -245,6 +269,16 @@
   </div>
 </section>
 
+<dialog class="popup" id="ausstellung-popup" aria-labelledby="popup-titel">
+  <form method="dialog" class="popup-kopf"><button type="submit" aria-label="Schließen">Schließen ×</button></form>
+  <p class="marke">Adventsausstellung</p>
+  <h2 id="popup-titel">Winterzauber &amp; Festtagslicht</h2>
+  <p>Freitag, 20. bis Sonntag, 22. November, in unseren neuen Räumlichkeiten. Eingang über die Annastraße.</p>
+  <div class="knoepfe">
+    <a class="knopf voll" href="#ausstellung" data-popup-link>Zur Ausstellung</a>
+  </div>
+</dialog>
+
 <footer class="fuss">
   <div class="huelle fuss-innen">
     <span>© Creativ Floristik · Bahnstraße 87 · 64390 Erzhausen</span>
@@ -261,6 +295,7 @@
   <img src="" alt="">
 </dialog>
 <script src="oeffnungszeiten.js"></script>
+<script src="ausstellung.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

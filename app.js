@@ -126,4 +126,24 @@
     k.classList.add('geladen');
     k.innerHTML = '<iframe title="Karte: Creativ Floristik, Bahnstraße 87, Erzhausen" loading="lazy" src="https://www.google.com/maps/d/u/0/embed?mid=1grUJYOGB-9ih43NpXrWDiWE6XxkNniJt"></iframe>';
   });
+
+  // Adventsausstellung: Abschnitt, Menüpunkt und Popup nur im Zeitraum zeigen
+  var AUS = window.AUSSTELLUNG;
+  if (AUS) {
+    var heuteIso = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+    var imZeitraum = heuteIso >= AUS.anzeigenAb && heuteIso <= AUS.bis;
+    if (imZeitraum) {
+      document.getElementById('ausstellung').hidden = false;
+      document.getElementById('nav-ausstellung').hidden = false;
+      var popup = document.getElementById('ausstellung-popup');
+      var schonGezeigt = false;
+      try { schonGezeigt = sessionStorage.getItem('ausstellung-popup') === '1'; } catch (e) {}
+      if (!schonGezeigt) {
+        popup.showModal();
+        try { sessionStorage.setItem('ausstellung-popup', '1'); } catch (e) {}
+      }
+      popup.addEventListener('click', function (e) { if (e.target === popup) popup.close(); });
+      popup.querySelector('[data-popup-link]').addEventListener('click', function () { popup.close(); });
+    }
+  }
 })();
